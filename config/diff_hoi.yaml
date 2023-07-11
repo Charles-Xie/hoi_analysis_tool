@@ -1,0 +1,37 @@
+# template for customization
+
+# necessary for all:
+# root dir where hico 'images' directory exists:
+# also where the visualization result file goes to
+root-dir: ./hico/
+# path of ground truth file:
+gt-path: ./hico/annotations/test_hico.json
+# dir where hico category files like 'hico_list_hoi.txt' exists
+hico-list-dir: ./hico/
+
+# path of model evaluation result json file:
+# example config for diff_hoi
+# det-path: /home/xiechi/hoi/qpic/logs/base_official/final_predictions.json.transformed
+# # path of second model's evaluation result, only needed when diff 2 models
+# det2-path: /home/xiechi/hoi/qpic/logs/try_residual_1declayer_wimageloss_iqueryembed_normby32_cont_0811/final_predictions.json.transformed
+# det-path: /home/xiechi/hoi/qpic/logs/base_bce/final_predictions_withobjscore.json.transformed
+# det2-path: /home/xiechi/hoi/qpic/logs/try_residual_1declayer_wimageloss_iqueryembed_normby32_bce_0814/final_predictions_withobjscore.json.transformed
+# det-path: /home/xiechi/hoi/qpic/logs/base_bce_posweight_mean2sum/final_predictions.json.transformed
+# det2-path: /home/xiechi/hoi/qpic/logs/try_residual_1declayer_wimageloss_iqueryembed_normby32_posweight_mean2sum_0823/final_predictions.json.transformed
+
+# for error analysis and pr curve analysis
+det-path: /home/xiechi/hoi/qpic/logs/base_ximproved_v2_cleandata_fast_again/final_predictions.json.transformed
+det2-path: /home/xiechi/hoi/qpic/logs/tmp/final_predictions.json.transformed
+# det-path: /home/xiechi/hoi/qpic/logs/try_hardresidual_fast_nohofc_ximproved_v2_cleandata_again_0905/final_predictions.json
+# det-path: /home/xiechi/hoi/qpic/logs/try_hardresidual_fast_nohofc_ximproved_v2_cleandata_again_0905/final_predictions_dns.json
+# det2-path: /home/xiechi/hoi/qpic/logs/try_hardresidual_fast_nohofc_ximproved_v2_cleandata_wimgloss_2declayer_auximgpairloss_adjustcoef/final_predictions.json
+# det-path: /home/xiechi/hoi/qpic/logs/base/final_predictions.json
+# det2-path: /home/xiechi/hoi/qpic/logs/try_hardres_fxc_fast70/final_predictions.json
+
+
+# image ids to show:
+# should be list [start_id, end_id]
+# negative indexing is supported
+img-ids: [0, 10]
+# img-ids: [1, 2] # for showing only image 1
+# img-ids: [0, 1000000] # for showing all images (using a large value as end_id)

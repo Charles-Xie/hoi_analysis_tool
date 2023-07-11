@@ -1,0 +1,17 @@
+
+# necessary for all:
+# root dir where hico 'images' directory exists:
+# also where the visualization result file goes to
+root-dir: ./hico/
+# path of ground truth file:
+# gt-path: ./hico/annotations/trainval_hico_iou0.6.json
+gt-path: ./hico/annotations/test_hico.json
+# dir where hico category files like 'hico_list_hoi.txt' exists
+hico-list-dir: ./hico/
+
+# for faster r-cnn detection result evaluation (before/after finetuning)
+det-path: /data/hoi/tmp/yhy_0123/DRG_Det.json
+det2-path: /data/hoi/tmp/yhy_0123/DRG_Det_finetune.json
+
+# for HOI map evaluation
+# det-path: /data/hoi/experiments/HOI_OneStage/trans_hoidet/hoidet_hico_trans2stage_ExhaustivelyMatching_HardMatching_WithTranformerEncoder_91/best_predictions.json
