@@ -198,4 +198,4 @@ The visualization result will be saved at `$root_dir$/$model_name$`, where `$mod
 ## Note
 
 This visualization tool was originally developed by [Yue Hu](https://scholar.google.com/citations?user=XBbwb78AAAAJ&hl=zh-CN) and Chi Xie for research purpose in 2021.
-It it not maintained anymore.
+It is not maintained anymore.
