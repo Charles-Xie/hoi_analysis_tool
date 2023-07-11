@@ -4,7 +4,7 @@ Error analysis and result visualization tool for Human Object Interaction Detect
 
 ## Functionality
 
-This tool can be used for the error analysis and result visualization of HOI models. It is designed originally for research but not limited to. It may be upgraded to support bussiness-end requirements. 
+This tool can be used for the error analysis and result visualization of HOI models. It is designed originally for research but not limited to.
 
 Currently its functionality should include:
 
